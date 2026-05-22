@@ -1,0 +1,253 @@
+🔐 Password Strength Checker & Generator (GUI Version)
+Desktop Security Utility Built with Python & Tkinter
+Developed by Rishikesh Borah
+📌 Project Overview
+
+Password security is one of the most important foundations of cybersecurity.
+
+Many users still create weak passwords such as:
+
+123456
+password
+admin123
+qwerty
+
+These passwords are vulnerable to:
+
+Brute Force Attacks
+Dictionary Attacks
+Credential Stuffing
+Account Takeover
+Password Guessing
+
+This project solves that problem by creating an interactive desktop application that allows users to:
+
+✔ Check password strength
+✔ Generate secure passwords
+✔ Get improvement suggestions
+✔ Copy generated passwords instantly
+✔ View password score visually
+
+Built completely in Python using Tkinter GUI Framework.
+
+Project implementation is based on your uploaded GUI application.
+
+🖥 Application Preview
+┌─────────────────────────────┐
+│ Password Strength Tool      │
+├─────────────────────────────┤
+│ CHECK PASSWORD              │
+│                             │
+│ Enter Password              │
+│ ************                │
+│                             │
+│ [Show Password]             │
+│                             │
+│ [Check Strength]            │
+│                             │
+│ Strength: Strong (100%)     │
+│ ████████████████████        │
+│                             │
+│ Suggestions                 │
+└─────────────────────────────┘
+🚀 Features
+🔎 Password Strength Analyzer
+
+Users can enter a password and instantly receive:
+
+Security Level
+Visual Meter
+Percentage Score
+Suggestions
+
+Example:
+
+Password:
+hello123
+
+Strength:
+Medium (60%)
+
+Suggestions:
+• Add uppercase letters
+• Add special characters
+🔐 Smart Password Generator
+
+Generate passwords using:
+
+✅ Custom Length (8–20)
+
+✅ Numbers
+
+✅ Uppercase Letters
+
+✅ Special Symbols
+
+Example:
+
+Length:
+16
+
+Generated:
+
+P@6M#xL8!tV2kQ3
+📊 Visual Progress Meter
+
+Unlike terminal tools, GUI provides:
+
+Weak
+████░░░░░░
+
+Medium
+██████░░░░
+
+Strong
+██████████
+
+This creates better user experience.
+
+👁 Password Visibility Toggle
+
+Users can:
+
+☑ Show Password
+
+Useful for:
+
+Reducing typing mistakes
+Password validation
+User convenience
+📋 Copy Password Feature
+
+Generated password can be copied instantly.
+
+No manual selection required.
+
+🧠 Core Logic Used
+
+This project uses Rule-Based Password Evaluation Logic.
+
+No external APIs.
+
+No machine learning.
+
+Fast and lightweight.
+
+Rule 1 → Length Validation
+if len(password) >= 8:
+Why?
+
+Long passwords:
+
+Increase entropy
+Resist brute-force attacks
+Improve security
+Rule 2 → Uppercase Detection
+[A-Z]
+
+Checks:
+
+Password
+
+instead of
+
+password
+Rule 3 → Lowercase Detection
+[a-z]
+
+Creates mixed character combinations.
+
+Rule 4 → Numeric Validation
+\d
+
+Example:
+
+hello
+
+↓
+
+hello123
+Rule 5 → Special Character Detection
+!@#$%^&*
+
+Example:
+
+Pass123
+
+↓
+
+P@ss#123
+⚙ How Strength Is Calculated
+Condition	Score
+Length ≥ 8	+1
+Uppercase	+1
+Lowercase	+1
+Number	+1
+Special Character	+1
+
+Final Classification:
+
+0–2 → Weak
+
+3–4 → Medium
+
+5 → Strong
+🏗 Architecture
+GUI
+│
+├── Password Input
+│
+├── Strength Checker
+│      │
+│      ├── Regex Validation
+│      ├── Score Calculation
+│      └── Suggestions
+│
+├── Password Generator
+│      │
+│      ├── Random Characters
+│      ├── Strength Validation
+│      └── Output
+│
+└── Clipboard Copy
+📂 Project Structure
+password-strength-gui/
+
+│
+├── guipass.py
+├── README.md
+├── requirements.txt
+├── screenshots/
+│
+├── assets/
+│
+└── LICENSE
+🛠 Technologies Used
+Technology	Purpose
+Python	Core Logic
+Tkinter	GUI
+Regex	Validation
+Random	Generation
+String	Character Sets
+📦 Installation
+
+Clone repository:
+
+git clone https://github.com/YOUR_USERNAME/password-strength-gui.git
+
+Move into folder:
+
+cd password-strength-gui
+
+Run:
+
+python3 guipass.py
+📥 Requirements
+
+Install Python:
+
+sudo apt install python3
+
+Verify:
+
+python3 --version
