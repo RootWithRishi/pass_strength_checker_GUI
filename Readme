@@ -229,19 +229,7 @@ Tkinter	GUI
 Regex	Validation
 Random	Generation
 String	Character Sets
-📦 Installation
 
-Clone repository:
-
-git clone https://github.com/YOUR_USERNAME/password-strength-gui.git
-
-Move into folder:
-
-cd password-strength-gui
-
-Run:
-
-python3 guipass.py
 📥 Requirements
 
 Install Python:
